@@ -1,4 +1,4 @@
 #!/bin/sh
 
 # Remove empty assets directory
-find Assets -type d -empty -exec rm -rf {} \;
+find Assets -type d -empty -prune -exec rm -rf {} \;
